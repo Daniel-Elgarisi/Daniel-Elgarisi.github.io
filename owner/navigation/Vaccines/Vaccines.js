@@ -7,16 +7,16 @@ async function watchVaccines() {
     //fetch
     //call for POST to the url:
     let response = await fetch(`http://${ip}:5000/vaccines/watchVacc/${phone_number}/${pname}`, {
-            //post
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        })
-        //get data from backend response as json!
+        //post
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+    //get data from backend response as json!
     let body = await response.json()
 
-    if (!body.message) {
+    try {
         let len = Object.keys(body[0]).length
         if (len != 0) {
             let table = document.getElementById("tbe")
@@ -40,6 +40,8 @@ async function watchVaccines() {
                 }
             }
         }
-    } else
+    }
+    catch {
         alert(body.message);
-}
+    }
+} 

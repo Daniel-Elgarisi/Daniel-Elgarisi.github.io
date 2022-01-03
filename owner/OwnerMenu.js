@@ -18,7 +18,7 @@ function nav(choice) {
         case 5:
             res = "navigation/DeleteAppointment/DelAppointment.html"
             break;
-        case 6:
+            case 6:
             res = "navigation/ViewMedicalReport/ViewMedicalReport.html"
             break;
         case 7:

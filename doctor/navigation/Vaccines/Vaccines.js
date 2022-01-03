@@ -1,7 +1,7 @@
-let ip = sessionStorage.getItem("ip")
 async function watchVaccines() {
     let phone = document.getElementById("Phone").value;
     let pname = document.getElementById("Pname").value;
+    let ip = sessionStorage.getItem("ip")
 
     //fetch
     //call for POST to the url:
@@ -40,7 +40,7 @@ async function watchVaccines() {
             }
         }
     }
-    catch{
+    catch {
         alert(body.message);
     }
 } 

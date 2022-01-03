@@ -17,7 +17,10 @@ body
         padding: 20px;  
         background-image: url("app\ pic.JPG"); 
         opacity: 1;
-        border-radius: 50px ;  
+        border-radius: 50px ;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
         position: absolute;
         top: 5%;
         left: 42%;   

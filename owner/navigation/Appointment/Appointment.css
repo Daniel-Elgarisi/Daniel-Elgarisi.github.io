@@ -19,6 +19,9 @@ body
         opacity: 1;
         border-radius: 50px ;  
         position: absolute;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
         top: 5%;
         left: 42%;   
         border: 3px solid rgba(73, 52, 38, 0.411);
